@@ -1,0 +1,228 @@
+* {
+  color: white;
+  font-family: Arial, Helvetica, sans-serif;
+}
+@media (max-width:767px){
+    .middle .left {
+        position: absolute;
+        top: 125px;
+        left:       250px;
+        margin: 20px 0;
+    }
+    
+
+}
+.cover {
+  background-image: url(../img/bg-layer.svg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-color: brown;
+}
+/* start header  */
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px 30px;
+}
+.header .logo {
+  display: flex;
+  align-items: center;
+}
+.header .logo img {
+  width: 60px;
+}
+.header .logo p {
+  font-size: 25px;
+  padding-left: 10px;
+}
+.header nav a {
+  text-decoration: none;
+  font-size: 20px;
+  padding-right: 40px;
+  opacity: 0.5;
+  transition: 0.3s;
+  -webkit-transition: 0.3s;
+  -moz-transition: 0.3s;
+  -ms-transition: 0.3s;
+  -o-transition: 0.3s;
+}
+
+.header nav a:first-of-type {
+  opacity: 1;
+}
+
+.header nav a:hover {
+  opacity: 1;
+}
+
+/* end header  */
+/* start middle */
+.middle {
+  position: relative;
+}
+.middle h1,
+.middle .taleek_middle {
+  text-align: center;
+}
+.middle h1 {
+  font-size: 70px;
+  animation: strach 4s   infinite  alternate;
+  -webkit-animation: strach 4s   infinite  alternate;
+}
+@keyframes strach{
+
+    to{
+    letter-spacing: 20px;
+}
+}
+.middle .taleek_midlle {
+  width: 700px;
+  display: block;
+  margin: 0 auto;
+  animation: movetaleek 4s  1 ease;
+  -webkit-animation: movetaleek 8s  infinite alternate ease-in-out;
+}
+@keyframes movetaleek{
+50%{
+    transform: translateX(40px );
+    -webkit-transform: translateX(40px );
+    -moz-transform: translateX(40px );
+    -ms-transform: translateX(40px );
+    -o-transform: translateX(40px );
+}
+100%{
+    transform: translateX(-40px );
+    -webkit-transform: translateX(-40px );
+    -moz-transform: translateX(-40px );
+    -ms-transform: translateX(-40px );
+    -o-transform: translateX(-40px );
+}
+}
+.middle .left {
+  position: absolute;
+  top: 200px;
+  left: 200px;
+}
+.middle .left .btn {
+  display: block;
+  border: none;
+  font-size: 25px;
+  cursor: pointer;
+  margin-bottom: 20px;
+  background-color: goldenrod;
+  padding: 11px;
+  border-radius: 8px;
+  -webkit-border-radius: 8px;
+  -moz-border-radius: 8px;
+  -ms-border-radius: 8px;
+  -o-border-radius: 8px;
+  transition: 0.3s;
+  -webkit-transition: 0.3s;
+  -moz-transition: 0.3s;
+  -ms-transition: 0.3s;
+  -o-transition: 0.3s;
+  animation:  identifier  3s   infinite alternate;
+  -webkit-animation:  identifier  3s   infinite alternate;
+}
+@keyframes identifier {
+    
+    to{
+        border-radius: 14px;
+        -webkit-border-radius: 14px;
+        -moz-border-radius: 14px;
+        -ms-border-radius: 14px;
+        -o-border-radius: 14px;
+}
+} 
+    
+
+.middle .left .btn:hover {
+  cursor: pointer;
+  border: 2px solid white;
+  background-color: transparent;
+  padding: 10;
+  font-size: 20px;
+  border-radius: 12px;
+  -webkit-border-radius: 12px;
+  -moz-border-radius: 12px;
+  -ms-border-radius: 12px;
+  -o-border-radius: 12px;
+}
+.middle .left img {
+  width: 140px;
+}
+/* end middle */
+/* start waves  */
+.waves  {
+  background-image: url(../img/wave.png) ;
+  width: 100%;
+  height: 140px;
+  animation: waves  250s infinite  ;
+  -webkit-animation: waves  250s infinite  ;
+}
+ @keyframes waves {
+    0%{
+        background-position:10000px;
+       
+}
+    50%{
+        background-position:500px;
+       
+}
+    100%{
+        background-position:1000px;
+        
+}
+
+    
+} 
+.waves::before {
+  content: "";
+  display: block;
+  background-image: url(../img/wave.png);
+  width: 100%;
+  height: 140px;
+  opacity: 0.5;
+  animation: waverev  250s infinite ;
+  -webkit-animation: waverev  250s infinite ;
+}
+@keyframes waverev {
+    0%{
+        background-position:-10000px;
+       
+}
+    50%{
+        background-position:-500px;
+       
+}
+    100%{
+        background-position:-1000px;
+        
+}
+
+}
+/* end waves  */
+ 
+::-webkit-scrollbar {
+  width: 1.1rem;
+ }
+ 
+::-webkit-scrollbar-track {
+  border:2px solid rgb(89, 19, 31);
+  box-shadow: inset 0px 0px 2.5px 2px rgb(0 0 0 / 48%) 
+ }
+ 
+::-webkit-scrollbar-thumb {
+  background: linear-gradient(90deg, #d21c4a, #de333e);
+  border-radius: 4px;
+  -webkit-border-radius: 4px;
+  -moz-border-radius: 4px;
+  -ms-border-radius: 4px;
+  -o-border-radius: 4px;
+}
+ 
+::-webkit-scrollbar-thumb:hover {
+  background: linear-gradient(270deg, #d21c4a, #ff0000, #d21c4a);
+}
+ 
